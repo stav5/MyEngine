@@ -18,6 +18,7 @@ goto :main
 	)
 
 	call :initMinGW
+	call :updatePath
 	call :updateDir
 
 
@@ -27,6 +28,10 @@ goto :EOF
 
 :initMinGW
 set Path=%Path%;C:\MinGW\bin\
+goto :EOF
+
+:updatePath
+set Path=%Path%;%DriveLetter%:\Lib\Win32\Runtimes
 goto :EOF
 
 

@@ -1,5 +1,7 @@
 @echo off
 
 pushd %DriveLetter%:\Build
-call spike.exe
+
+del /Q *
+
 popd

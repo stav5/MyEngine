@@ -1,4 +1,4 @@
 @echo off
 
-call Build.cmd
+call BuildAll.cmd
 call Run.cmd
