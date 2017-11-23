@@ -1,6 +1,4 @@
 #include <my.h>
-#include <cstdio>
-#include <SDL.h>
 namespace My
 {
 
@@ -12,7 +10,16 @@ int TripleMe(int x)
 void DoStuff()
 {
 	printf("stuff\n");
-	SDL_Init(SDL_INIT_EVERYTHING);
+}
+
+MyGame::MyGame()
+{
+
+}
+
+void MyGame::Start()
+{
+	printf("test\n");
 }
 
 }

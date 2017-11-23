@@ -6,18 +6,21 @@
 	#define DECLSPEC __declspec(dllimport)
 #endif
 
+#include <cstdio>
 
-#ifdef C_HEADERS
-extern "C" {
-#endif
 namespace My
 {
 
 int DECLSPEC TripleMe(int x);
 void DECLSPEC DoStuff();
 
+class DECLSPEC MyGame
+{
+public:
+	MyGame();
+	void AddScene();
+	void Start();
+};
+
 }
-#ifdef C_HEADERS
-}
-#endif
 
